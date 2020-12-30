@@ -1,0 +1,15 @@
+h6{
+    margin-left: 100%;
+    text-align: center;
+}
+.container{
+    background-color: blueviolet;
+    height: 120%;
+    : auto;
+    padding-left: 20px;
+    padding-left: 20px;
+}
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
