@@ -7,12 +7,11 @@
 a:hover{
 	text-decoration: none;
 }
-header,.nav-inner,.top-header,footer,.card-img-top,.conseils,.consultations{
+header,.top-header,footer,.card-img-top,.conseils,.consultations{
 	background: #6d071a;
 }
 /*Header*/
 .top-header{
-	height: 0vh;
 	min-height: 90px;
 	max-height:90px;
 	justify-content: space-between;
@@ -24,7 +23,7 @@ header,.nav-inner,.top-header,footer,.card-img-top,.conseils,.consultations{
 	text-align: center;
 	color:white;
 	font-weight: bolder;
-	font-size: clamp(1.5vw,1.5vw,18px);
+	font-size: 1.5vw;
 }
 .top-header a .fa-clock,.top-header a .fa-phone-alt{
 	font-size: 3.8vw;
@@ -78,14 +77,18 @@ header,.nav-inner,.top-header,footer,.card-img-top,.conseils,.consultations{
 	padding: 10px 30px;
 	background: #0096ff;
 }/*side menu*/
-.second-nav{
-	background: #6d071a;
+.main_section{
+	position: relative;
+}
+.nav-inner{
+	position: absolute;
 }
 .nav-label{
 	position: relative;
 }
 .sidebar{
 	position: fixed;
+	z-index: 1990;
 	top:140px;
 	left: -250px;
 	width: 150px;
@@ -101,7 +104,7 @@ header,.nav-inner,.top-header,footer,.card-img-top,.conseils,.consultations{
 	user-select: none;
 	transition: all .5s ease;
 }
-.sidebar ul a{
+.sidebar ul li a{
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -115,6 +118,9 @@ header,.nav-inner,.top-header,footer,.card-img-top,.conseils,.consultations{
 	border-bottom: 1px solid black;
 	transition: .4s;
 }
+.sidebar .sideRDV{
+	line-height: 30px;
+}
 .sidebar ul a i{
 	margin-left: -10px;
 }
@@ -124,38 +130,41 @@ ul li:hover a{
 #check{
 	display:none;
 }
-label #btn-nav,.sidebar label #cancel{
-	position: absolute;
+.sidebar label #cancel{
 	cursor: pointer;
 }
 label #btn-nav{
+	display: none;
+	z-index: 1999;
+	position: relative;
 	border: 2px solid white;
 	font-size: 40px;
+	top: 0;
+	left: 0;
 	color: white;
 	padding: 7px;
+	opacity: 1;
 	transition: all .5s;
 }
 .sidebar label #cancel{
+	position: absolute;
 	background: #6d071a;
-	z-index: 1111;
-	left: -195px;
-	top: -30px;
+	z-index: 2000;
+	right: 0;
+	top: 0;
 	font-size: 40px;
 	color: white;
 	border-radius: 50%;
-	padding: 4px 9px;
+	padding: 2px 9px;
 }
 #check:checked ~ .sidebar{
+	z-index: 1000;
 	left: 0;
 }
-#check:checked ~ label #btn-nav{
+#check:checked ~label #btn-nav{
 	left: 250px;
 	opacity: 0;
 	pointer-events: none;
-}
-#check:checked ~ .sidebar label #cancel{
-
-	left:-90px;
 }
 .horloge{
 	align-items: center;
@@ -173,16 +182,37 @@ label #btn-nav{
 
 
 @media screen and (max-width: 300px){
-	.top-header{
-		margin-top: 50px;
-	}
 	.top-element{
 		display: none;
 	}
 	.search-bar table{
 		width: 80%;
 	}
+	.banner{
+		height: 300px;
+	}
 	.inner-banner #first-nav{
 		display: none !important;
+	}
+	label #btn-nav{
+		display: inline-block;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 576px){
+	.top-header a{
+		font-size: 2vw;
+		align-items: flex-start;
+	}
+	.top-header a p{
+		font-size: 1.8vw;
+	}
+	.search-bar table{
+		width: 80%;
+	}
+	.inner-banner #first-nav{
+		display: none !important;
+	}
+	label #btn-nav{
+		display: inline-block;
 	}
 }
