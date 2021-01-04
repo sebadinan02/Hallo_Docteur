@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="short icon" href="../images/logo_min.png">
     <link rel="stylesheet" href="../fonts/css/all.css">
-    <link rel="stylesheet" type="style/css" href="../css/styles/services.css">
-    <link rel="stylesheet" href="../css/styles/style_index.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles/services.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spécialités - Hallo Docteur</title>
 </head>
 <body>
     <header>
@@ -85,7 +85,7 @@
         </div> 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3" style="height:200px; background-color:rgb(198, 252, 252) ;margin-top: 10px; ">
+            <div class="col-md-3" id="chirurgie" style="height:200px; background-color:rgb(198, 252, 252) ;margin-top: 10px; ">
                 <h5 style="text-align: center;">CHIRUGIE</h5>
                 <ul>
                     <li class="d-flex justify-content-center"><a href="#">Digestive et Viscérale</a></li>
@@ -95,7 +95,7 @@
                     <li class="d-flex justify-content-center"><a href="#">Urologie</a></li>
                 </ul>
             </div>
-            <div class="col-md-3" style="height:200px; background-color:rgb(222, 243, 243) ;margin-top: 10px ;">
+            <div class="col-md-3" id="medGen" style="height:200px; background-color:rgb(222, 243, 243) ;margin-top: 10px ;">
                 <h5 style="text-align: center;">MEDECINE GENERALE</h5>
                 <ul>
                     <li class="d-flex justify-content-center"><a href="#">Anesthésie et réanimation</a></li>
@@ -105,7 +105,7 @@
                     <li class="d-flex justify-content-center"><a href="#">Psychologie</a></li>
                 </ul>
             </div>
-            <div class="col-md-3" style="height:200px; background-color:rgb(197, 250, 250) ;margin-top: 10px;">
+            <div class="col-md-3" id="paraMedi" style="height:200px; background-color:rgb(197, 250, 250) ;margin-top: 10px;">
                 <h5 style="text-align: center;">PARA-MEDICALE</h5>
                 <ul>
                     <li class="d-flex justify-content-center"><a href="#">Diététique</a></li>
@@ -113,7 +113,7 @@
                     <li class="d-flex justify-content-center"><a href="#">Ostéopathie</a></li>
                 </ul>
             </div>
-            <div class="col-md-3" style="height:200px; background-color:rgb(225, 250, 250) ;margin-top: 10px;">
+            <div class="col-md-3" id="medTrad" style="height:200px; background-color:rgb(225, 250, 250) ;margin-top: 10px;">
                 <h5 style="text-align: center;">MEDECINE TRADITIONNELLE</h5>
                 <ul>
                     <li class="d-flex justify-content-center"><a href="#">Rebooteur</a></li>
@@ -205,6 +205,51 @@
     </div>
 </div>
 </div>
+<footer class="container-fluid">
+    <div class="inner-footer">
+        
+        <div class="row footer-element">
+            <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-4 col-lg-4 element">
+                <iframe class="two" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31182.607676403586!2d-1.5265435932349996!3d12.327498400000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebdf0eedde651%3A0x54f20eea1a2ba3ab!2sClinique%20Centre%20d&#39;Or!5e0!3m2!1sfr!2sbf!4v1609272212186!5m2!1sfr!2sbf" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-3 col-lg-3 element d-flex flex-column align-items-center">
+                <h4>La Clinique</h4>
+                <ul>
+                    <li><a href="#">Historique</a></li>
+                    <li><a href="#">Une Equipe Compétente</a></li>
+                    <li><a href="#">Les Services de la Clinique</a></li>
+                </ul>
+            </div>
+            <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-3 col-lg-3 element d-flex flex-column align-items-center">
+                 <h4>Nos Spécialites</h4>
+                <ul>
+                    <li><a href="#chirurgie">Chirurgies</a></li>
+                    <li><a href="#medGen">Médicales</a></li>
+                    <li><a href="#paraMed">Para-Médicales</a></li>
+                    <li><a href="#medTrad">Médecine Traditionnelle</a></li>
+                </ul>
+            </div>
+            <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-2 col-lg-2 element d-flex flex-column align-items-center">
+                <h4>Suivez-Nous</h4>
+                <div>
+                    <ul class="list-inline d-flex justify-content-space-center">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/Hallo-Docteur-101110651929197" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/Hallo_Docteur" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <ul class="list-inline d-flex justify-content-space-center">
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/hallo_docteur" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/hallo-docteur-hallo-docteur-639105203" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright d-flex justify-content-center">
+            <p><i class="fas fa-copyright"></i> Copyright 2020 - Politiques et Confidentialités</p>
+        </div>
+    </div>
+</footer>
 <script src="../js/jquery-3.5.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 </body>

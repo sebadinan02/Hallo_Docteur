@@ -13,3 +13,79 @@ checkBox.addEventListener('click', function () {
 		btn_nav.style.opacity="";
 	}
 });
+
+
+let observerDroit = new IntersectionObserver(function (entries){
+	entries.forEach(function (observable){
+		if (observable.intersectionRatio > 0.3){
+			observable.target.classList.remove('not-visible-droite');
+			// observerDroit.unobserve(observable.target);
+		}
+		
+	})
+},{
+	threshold:[0.3]
+});
+
+let parDroite = document.querySelectorAll('.actu');
+parDroite.forEach(function (droite){
+	droite.classList.add('not-visible-droite')
+	observerDroit.observe(droite)
+})
+
+let observerGauche = new IntersectionObserver(function (entries){
+	entries.forEach(function (observable){
+		if (observable.intersectionRatio > 0.3){
+			observable.target.classList.remove('not-visible-gauche');
+			// observerGauche.unobserve(observable.target);
+		}
+		
+	})
+},{
+	threshold:[0.3]
+});
+
+let parGauche = document.querySelectorAll('.info');
+parGauche.forEach(function (gauche){
+	gauche.classList.add('not-visible-gauche')
+	observerGauche.observe(gauche)
+})
+
+
+let observerTop = new IntersectionObserver(function (entries){
+	entries.forEach(function (observable){
+		if (observable.intersectionRatio > 0.3){
+			observable.target.classList.remove('not-visible-top');
+			// observerTop.unobserve(observable.target);
+		}
+		
+	})
+},{
+	threshold:[0.3]
+});
+
+let parTop = document.querySelectorAll('.for-top');
+parTop.forEach(function (top){
+	top.classList.add('not-visible-top')
+	observerTop.observe(top)
+})
+
+
+
+let observerZoom = new IntersectionObserver(function (entries){
+	entries.forEach(function (observable){
+		if (observable.intersectionRatio > 0.5){
+			observable.target.classList.remove('not-visible-zoom');
+			// observerTop.unobserve(observable.target);
+		}
+		
+	})
+},{
+	threshold:[0.5]
+});
+
+let parZoom = document.querySelectorAll('.bio');
+parZoom.forEach(function (zoom){
+	zoom.classList.add('not-visible-zoom')
+	observerZoom.observe(zoom)
+})

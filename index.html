@@ -59,8 +59,8 @@
                 <nav class="nav list-inline d-flex" id="first-nav">
                     <li class="list-inline-item"><a href="#">Accueil</a></li>
                     <li class="list-inline-item"><a href="#">La Clinique</a></li>
-                    <li class="list-inline-item"><a href="#">Spécialités</a></li>
-                    <li class="list-inline-item RDV"><a href="#"><i class="far fa-calendar-plus"></i> Prendre Rendez-Vous</a></li>
+                    <li class="list-inline-item"><a href="pages/services.html">Spécialités</a></li>
+                    <li class="list-inline-item RDV"><a href="pages/RDV.html"><i class="far fa-calendar-plus"></i> Prendre Rendez-Vous</a></li>
                 </nav>
             </div>
         </section>
@@ -75,7 +75,7 @@
                     <div class="local">
                         <iframe class="one" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31182.607676403586!2d-1.5265435932349996!3d12.327498400000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebdf0eedde651%3A0x54f20eea1a2ba3ab!2sClinique%20Centre%20d&#39;Or!5e0!3m2!1sfr!2sbf!4v1609272212186!5m2!1sfr!2sbf" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <p>
-                            
+                            <img src="images/logoplein.png" alt="">
                             <p class="loca_text">Avenue Pierre Ouédraogo <br>
                                 Entre le siège du MPP et la Banque Mondiale <br> 01 BP 432 - Ouagadougou 01</p>
                             <p class="loca_text2"><i class="fas fa-phone-alt"></i>  (+226) 25 31 00 00 <br>
@@ -96,7 +96,7 @@
                     </div>
             </section>
             <section class="container actuInfo d-flex justify-content-space-evenly">
-               <div class="card">
+               <div class="card actu">
                   <div class="card-img-top">
                       <h2>Actualités</h2>
                   </div>
@@ -107,7 +107,7 @@
                   </div>
                 </div>
 
-                 <div class="card">
+                 <div class="card info">
                   <div class="card-img-top">
                       <h2>Infos Santé</h2>
                   </div>
@@ -125,11 +125,11 @@
                 </div>
             </section>
             <section class="container conseilsConsul d-flex flex-column align-items-center">
-               <div class="conseils">
+               <div class="conseils for-top">
                    <span class="bigB">Besoin</span> de conseils rapides sur un quelconque problème de santé ? <br>
                    Notre servic de conseils en ligne est là pour vous. <br>Appellez le <span class="num">800 00 100</span>
                </div> 
-               <div class="consultations">
+               <div class="consultations for-top">
                    <span class="bigB">Besoin</span> d'une consultation pou un problème de santé particulier ? <br>
                    Appuyze sur l'icône ci-dessous pour passer une consultation en ligne. <br>
                    <img src="images/logo_min.png" alt="">
@@ -139,41 +139,44 @@
 
     </section>
     <footer class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center inner-img">
+            <img class="img" src="images/logoBig.png" alt="">
+        </div>
         <div class="inner-footer">
             
             <div class="row footer-element">
-                <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-4 col-lg-4 element">
+                <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 element">
                     <iframe class="two" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31182.607676403586!2d-1.5265435932349996!3d12.327498400000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebdf0eedde651%3A0x54f20eea1a2ba3ab!2sClinique%20Centre%20d&#39;Or!5e0!3m2!1sfr!2sbf!4v1609272212186!5m2!1sfr!2sbf" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-3 col-lg-3 element d-flex flex-column align-items-center">
-                    <h4>La Clinique</h4>
+                <div class="col-sm-3 col-md-3 col-lg-3 element d-flex flex-column align-items-center">
+                    <h4 class="clinic">La Clinique</h4>
                     <ul>
                         <li><a href="#">Historique</a></li>
                         <li><a href="#">Une Equipe Compétente</a></li>
                         <li><a href="#">Les Services de la Clinique</a></li>
                     </ul>
                 </div>
-                <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-3 col-lg-3 element d-flex flex-column align-items-center">
+                <div class="col-sm-6 col-md-3 col-lg-3 element d-flex flex-column align-items-center">
                      <h4>Nos Spécialites</h4>
                     <ul>
-                        <li><a href="#">Chirurgies</a></li>
-                        <li><a href="#">Médicales</a></li>
-                        <li><a href="#">Para-Médicales</a></li>
-                        <li><a href="#">Médecine Traditionnelle</a></li>
+                        <li><a href="pages/services.html#chirurgie">Chirurgies</a></li>
+                        <li><a href="pages/services.html#medGen">Médicales</a></li>
+                        <li><a href="pages/services.html#paraMedi">Para-Médicales</a></li>
+                        <li><a href="pages/services.html#medTrad">Médecine Traditionnelle</a></li>
                     </ul>
                 </div>
-                <div class="offset-xs-2 col-xs-8 col-sm-6 col-md-2 col-lg-2 element d-flex flex-column align-items-center">
+                <div class="col-sm-6 col-md-2 col-lg-2 element d-flex flex-column align-items-center">
                     <h4>Suivez-Nous</h4>
                     <div>
                         <ul class="list-inline d-flex justify-content-space-center">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/Hallo-Docteur-101110651929197" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/Hallo_Docteur" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                         <ul class="list-inline d-flex justify-content-space-center">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/hallo_docteur" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/hallo-docteur-hallo-docteur-639105203" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
