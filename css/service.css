@@ -1,0 +1,270 @@
+.pr1{
+    background-color: #6d071a;
+}
+.pr1{
+    background-color: #6d071a;
+}
+.horlo{
+    font-size:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.vert{
+    display: flex;
+    justify-content: center;
+}
+.phone{
+    font-size:50px;
+    color: white;
+}
+nav ul li{
+   
+    line-height: 80px;
+    margin: 0 5px;
+    list-style-type: none;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+a .active,a:hover{
+    transition: all;
+}
+.checkbtn{
+    margin-left: 70px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.img1{
+    justify-content: center;
+}
+.texte{
+    text-align: center;
+    color: white;
+}
+.text{
+  display:flex;
+  justify-content:flex-end ; 
+  color: white; 
+}
+
+.far{
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+#myinput{
+    border-radius: 15px 15px;
+    width: 150%;
+}
+.fa-search{
+    margin-left: 50px;
+    color: gray;
+}
+.menu-main{
+    width: min-content;
+    height: min-content;
+}
+.menu{
+    display: none;
+    position: absolute;
+    background-color: #6d071a;
+    z-index: 5;
+}
+
+
+.menu-main:hover .menu{
+     display: block;
+  }
+  .button{
+      height: 30px;
+      width: 100%;
+  }
+  .jour{
+      text-align: center;
+  }
+/*cette section est dédier au pied de page*/
+  .piedpage{
+    background-color: #6d071a;
+}
+.logop{
+    text-align: center;
+}
+.textu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.lservi{
+    color: white;
+}
+.lservi li{
+    list-style: none;
+    margin-left:5px ;
+}
+.servi{
+    color: white;
+}
+.servi li{
+    list-style: none;
+    margin-left:5px ;
+}
+
+.icone h5{
+    color: white;
+}
+.iconef{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    justify-content: space-between;
+}
+.iconef a{
+    color: white;  
+}
+    
+.iconeg{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    justify-content: space-between;
+}
+.iconeg a{
+    color: white;
+}
+/*fin de la section dédier au pied de page*/
+
+.medecine{
+    margin-top:15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cardiologie{
+    border-left: 4px solid #6d071a;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.para1{
+    color: #6d071a;
+}
+.maternite{
+    border-left: 4px solid #af057c;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.para2{
+    color: #af057c;
+}
+.urgence{
+    border-left: 4px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.para3{
+    color: red;
+}
+.traditionel{
+    border-left: 4px solid rgb(39, 216, 16);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.para4{
+    color: rgb(39, 216, 16);
+}
+.services{
+    margin-top:15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bucodentaire{
+    border-left: 4px solid rgb(2, 99, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.para5{
+    color: rgb(2, 99, 31);
+}
+.generalist{
+    border-left: 4px solid rgb(10, 206, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.para6{
+    color: rgb(10, 206, 241) ;
+}
+.dermatologie{
+    border-left: 4px solid rgb(97, 19, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.para7{
+    color:rgb(97, 19, 241);
+}
+.oftalmologie{
+    border-left: 4px solid rgb(140, 7, 180);
+    display: flex;
+    flex-direction: column;
+    justify-content: left; 
+}
+.para8{
+    color: rgb(140, 7, 180);
+}
+/*mediaquery*/
+@media screen and (min-width:200px) and (max-width:800px)
+{
+    .text ,.jour, .vert ,.button{
+        display: none;
+    }
+    .img1{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .medecine{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .cardiologie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    } 
+    h5{
+        text-align: center;
+    }
+    .piedpage{
+        display:column;
+    }
+    .lservi{
+        display: none;
+    } 
+    .servi{
+        display: none;
+    }
+}
