@@ -14,6 +14,9 @@ checkBox.addEventListener('click', function () {
 	}
 });
 
+document.querySelector('#consuLigne').addEventListener('click',() =>{
+	alert('Ce service est malheureusement inaccesible pour l\'instant. Réessayez un peu plus tard. Merci pour votre comprehension')
+} )
 
 let observerDroit = new IntersectionObserver(function (entries){
 	entries.forEach(function (observable){
@@ -86,6 +89,28 @@ let observerZoom = new IntersectionObserver(function (entries){
 
 let parZoom = document.querySelectorAll('.bio');
 parZoom.forEach(function (zoom){
-	zoom.classList.add('not-visible-zoom')
-	observerZoom.observe(zoom)
+	zoom.classList.add('not-visible-zoom');
+	observerZoom.observe(zoom);
 })
+
+document.querySelector('#form').addEventListener('submit',() => {
+		let searchValue = document.querySelector('#search').value;
+		if (searchValue == 'specialites' || searchValue == 'specialite') {
+		
+			let choix=window.confirm('Voulez-vous être redirigé vers "Spécialités"');
+			if (choix){
+				window.open("pages/specialites.html");
+			}
+				
+		} else if(searchValue == 'RDV'||searchValue == 'Prendre RDV' || searchValue=='prendre rendez-vous'){
+			let choix=window.confirm('Voulez-vous être redirigé vers "Prendre RDV"');
+			if (choix){
+				window.open("pages/RDV.html");
+			}
+		}
+
+	});
+
+
+
+
