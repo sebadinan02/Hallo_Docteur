@@ -39,7 +39,13 @@ a:hover{
 	font-style: italic;
 	color: #7a1e2f;
 }
-.search-bar table a{
+.search-bar button{
+	border: none;
+	background: transparent;
+	outline: none;
+	color: #7a1e2f;
+}
+.search-bar table .fa-search{
 	color: #7a1e2f;
 	font-size: 20px;
 }

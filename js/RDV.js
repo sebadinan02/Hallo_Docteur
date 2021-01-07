@@ -9,3 +9,10 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
+
+document.querySelector('.sign-in-form').addEventListener('submit', () => {
+  alert("Formulaire envoyé")
+})
+document.querySelector('.sign-up-form').addEventListener('submit', () => {
+  alert("Formulaire envoyé")
+})

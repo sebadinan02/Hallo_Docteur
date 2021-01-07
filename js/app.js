@@ -22,7 +22,6 @@ let observerDroit = new IntersectionObserver(function (entries){
 	entries.forEach(function (observable){
 		if (observable.intersectionRatio > 0.3){
 			observable.target.classList.remove('not-visible-droite');
-			// observerDroit.unobserve(observable.target);
 		}
 		
 	})
@@ -40,7 +39,6 @@ let observerGauche = new IntersectionObserver(function (entries){
 	entries.forEach(function (observable){
 		if (observable.intersectionRatio > 0.3){
 			observable.target.classList.remove('not-visible-gauche');
-			// observerGauche.unobserve(observable.target);
 		}
 		
 	})
@@ -59,7 +57,6 @@ let observerTop = new IntersectionObserver(function (entries){
 	entries.forEach(function (observable){
 		if (observable.intersectionRatio > 0.3){
 			observable.target.classList.remove('not-visible-top');
-			// observerTop.unobserve(observable.target);
 		}
 		
 	})
@@ -79,7 +76,7 @@ let observerZoom = new IntersectionObserver(function (entries){
 	entries.forEach(function (observable){
 		if (observable.intersectionRatio > 0.5){
 			observable.target.classList.remove('not-visible-zoom');
-			// observerTop.unobserve(observable.target);
+			
 		}
 		
 	})
