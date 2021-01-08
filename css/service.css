@@ -21,7 +21,7 @@
 }
 nav ul li{
    
-    line-height: 80px;
+    line-height: 60px;
     margin: 0 5px;
     list-style-type: none;
 }
@@ -79,7 +79,10 @@ a .active,a:hover{
     background-color: #6d071a;
     z-index: 5;
 }
-
+.menu li a:hover{
+    color: white;
+    text-decoration: none;
+}
 
 .menu-main:hover .menu{
      display: block;
@@ -101,7 +104,11 @@ a .active,a:hover{
 .textu{
     display: flex;
     justify-content: space-between;
+}
+iframe{
 
+    height: 200px;
+    width: 250px;
 }
 .lservi{
     color: white;
@@ -144,11 +151,12 @@ a .active,a:hover{
 /*fin de la section dédier au pied de page*/
 
 .medecine{
-    margin-top:15px;
-    margin-bottom: 15px;
+    margin-top:25px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 .cardiologie{
     border-left: 4px solid #6d071a;
@@ -187,11 +195,12 @@ a .active,a:hover{
     color: rgb(39, 216, 16);
 }
 .services{
-    margin-top:15px;
-    margin-bottom: 15px;
+    margin-top:25px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 .bucodentaire{
     border-left: 4px solid rgb(2, 99, 31);
@@ -226,13 +235,16 @@ a .active,a:hover{
     flex-direction: column;
     justify-content: left; 
 }
+.baht{
+    width: 240px;
+}
 .para8{
     color: rgb(140, 7, 180);
 }
 /*mediaquery*/
-@media screen and (min-width:200px) and (max-width:800px)
+@media all and (min-width:200px) and (max-width:700px)
 {
-    .text ,.jour, .vert ,.button{
+    .text ,.jour, .vert ,.button ,.pra ,.oftalmologie{
         display: none;
     }
     .img1{
@@ -249,6 +261,11 @@ a .active,a:hover{
         flex-direction: column;
         justify-content: center;
     } 
+    .textu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .cardiologie{
         display: flex;
         flex-direction: column;
@@ -267,4 +284,9 @@ a .active,a:hover{
     .servi{
         display: none;
     }
+    .para8{
+        text-align: justify;
+    }
+    
+
 }

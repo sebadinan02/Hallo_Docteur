@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="short icon" href="../images/logo_min.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/css/all.css">
+    <link rel="stylesheet" href="../css/styles/style_RDV.css">
+    <title>Prendre Rendez-vous</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Pour les patients/proches des patients</h2>
+            <div class="input-field">
+              <input type="text" placeholder="Entrez le nom">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Entrez le prénom">
+            </div>
+            <div class="mydiv">
+              <p>C'est pour :</p>
+                <div>
+                    <span>Vous-même</span>
+                  <input type="radio" name="radio"> &nbsp;&nbsp;&nbsp;
+                  <span>Une autre personne</span> 
+                  <input type="radio" name="radio">
+                </div>
+            </div>
+            <div class="mydiv">
+              <p><span>Veuillez selectionner une date</span></p>
+                <div>
+                      <input type="date">
+                </div>
+            </div>
+            <div class="mydiv">
+              <p class="centrer">Choisissez parmi les médécins disponibles</p>
+              <select>
+                <optgroup label="Chirurgies">
+                  <option>Dr Dominique Bagré</option>
+                  <option>Dr Mihien Aimé</option>
+                  <option>Dre Oussalé Ariane</option>
+                </optgroup>
+                <optgroup label="Médécine Générale">
+                  <option>Dr Cissé Aboubakar</option>
+                  <option>Dre Sawadogo Prisca</option>
+                  <option>Dr Silga Souleymane</option>
+                </optgroup>
+                <optgroup label="Para-Médicales">
+                  <option>Dre Oussalé Ariane</option>
+                  <option>Dre Nana Aicha</option>
+                  <option>Dr Diebre Davy</option>
+                </optgroup>
+                <optgroup label="Médécine Traditionnelle">
+                  <option>Dre Sawadogo Leila Prisca</option>
+                  <option>Dr Guigma Alain</option>
+                  <option>Dre Bassina Rebecca</option>
+                </optgroup>
+              </select>
+            </div>
+            <input type="submit" value="ENVOYER" class="btn solid">
+            <p class="social-text">Ou contactez-nous via nos réseaux sociaux</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Pour les professionnels de la santé</h2>
+            <div class="input-field">
+              <input type="text" placeholder="Entrez le nom">
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Entrez le prénom">
+            </div>
+            <div class="input-field">
+              <input type="email" placeholder="Email">
+            </div>
+            <input type="submit" class="btn" value="ENVOYER">
+            <p class="social-text">Ou contactez-nous via nos réseaux sociaux</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Vous êtes un professionnel <br> de la sante ?</h3>
+            <p>
+              Vous désirez offir vos services ?
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Cliquez ici
+            </button>
+          </div>
+          <img src="../images/log.svg" class="image" alt="" style="background: transparent;">
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Vous voulez prendre un RDV ? <br> Pour vous ? Pour un proche ?</h3>
+            <p>
+              Un formulaire vous est spécialement réservé
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Cliquez ici
+            </button>
+          </div>
+          <img src="../images/register.svg" class="image" alt="">
+        </div>
+      </div>
+    </div>
+    <script src="../js/RDV.js"></script>
+  </body>
+</html>

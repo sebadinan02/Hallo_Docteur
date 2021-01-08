@@ -8,6 +8,10 @@
     justify-content: center;
     color: white;
 }
+iframe{
+    height: 200px;
+    width: 250px;
+}
 .Vert{
     display: flex;
     justify-content: center;
@@ -77,6 +81,10 @@ a .active,a:hover{
     background-color: #6d071a;
     z-index: 5;
 }
+.menu li a:hover{
+    color: white;
+    text-decoration: none;
+}
 
 .menu-main:hover .menu{
      display: block;
@@ -89,6 +97,7 @@ a .active,a:hover{
       text-align: center;
   }
   .presentation{
+      text-align: center;
       margin-left:70px ;
       margin-right: 70px;
       border-bottom: 2px solid  #6d071a;
@@ -103,13 +112,13 @@ a .active,a:hover{
 }
 .para{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin-left:70px ;
     margin-right: 70px;
 }
 .paragraphe{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left; 
+    text-align: center; 
 }
 .albomme{
     display: column;
@@ -202,8 +211,11 @@ a .active,a:hover{
 .bouton{
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
 }
 .bouton a:hover{
+    text-decoration: none;
+    color: white;
     background:linear-gradient(100deg,#07c092,#6d071a);
     background-attachment:scroll;
     
@@ -261,4 +273,62 @@ a .active,a:hover{
 }
 .iconeg a{
     color: white;
+}
+
+@media screen and (min-width:200px) and (max-width:800px)
+{
+    .text ,.jour, .Vert ,.button ,.foto ,.service , .imae3 ,.prim{
+        display: none;
+    }
+    .img1{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .textu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .piedpage{
+        display:column;
+    }
+    .lservi{
+        display: none;
+    } 
+    .servi{
+        display: none;
+    }
+    .slide-container{
+        display: none;
+    }
+    .presentation h3{
+        text-align: center;
+        font-size: 16px;
+    }
+    .para .paragraphe{
+        text-align: justify;
+    }
+    .prototype{
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-left:0 ;
+    }
+    .bouton{
+        height: 30px;
+    }
+    .bouton h4{
+        font-size: 10px;
+        
+    }
+    body{
+        height: 50px;
+    }
+    .checkbtn{
+        margin-left: 0;
+    }
+
+    
 }
